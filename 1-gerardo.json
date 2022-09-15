@@ -1,0 +1,11 @@
+{
+    "name": "Gerardo",
+    "description": "Gerardo presenting again!",
+    "image": "https://ipfs.io/ipfs/QmNSNrtgvLc1dYQQCz9KHwkSZUH8M7hUKkyLYK1hkdhn4f?filename=gerardo.jpg",
+    "attributes": [
+        {
+            "trait_type": "intelligence",
+            "value": 50
+        }
+    ]
+}
