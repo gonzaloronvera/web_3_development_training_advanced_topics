@@ -13,7 +13,7 @@
 - Publish source code using [Remix](https://remix.ethereum.org/) and validate your contract in [Rinkeby EtherScan](https://rinkeby.etherscan.io/).
 - Mint your NFT.
 - Go to [OpenSea](https://testnets.opensea.io/) and connect your wallet.
-- Validate your NFT is public in [OpenSea](https://testnets.opensea.io/). Your NFT URL should be something like https://testnets.opensea.io/assets/rinkeby/YOUR_CONTRACT_ADDRESS/TOKEN_ID>.
+- Validate your NFT is public in [OpenSea](https://testnets.opensea.io/). Your NFT URL should be something like https://testnets.opensea.io/assets/rinkeby/YOUR_CONTRACT_ADDRESS/TOKEN_ID.
 - Sell your NFT and make money!
 
 ## Testing a Decentralized oracle
