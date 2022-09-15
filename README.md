@@ -18,7 +18,7 @@
 
 ## Testing a Decentralized oracle
 
-- Explore the [Chainlink data feeds documentation](https://docs.chain.link/docs/get-the-latest-price/).
+- Explore the [Chainlink data feeds documentation](https://docs.chain.link/docs/get-the-latest-price/) and [popular feeds](https://data.chain.link/).
 - Explore the [Ethereum data feeds](https://docs.chain.link/docs/ethereum-addresses/) addresses.
 - Publish a smart contract using the code from [2_PriceFinder.sol](https://github.com/gonzaloronvera/web_3_development_training_advanced_topics/blob/main/2_PriceFinder.sol).
 - Test the contract.
