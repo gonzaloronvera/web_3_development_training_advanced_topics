@@ -13,15 +13,15 @@
 - Publish source code using [Remix](https://remix.ethereum.org/) and validate your contract in [Rinkeby EtherScan](https://rinkeby.etherscan.io/).
 - Mint your NFT.
 - Go to [OpenSea](https://testnets.opensea.io/) and connect your wallet.
-- Validate your NFT is public in [OpenSea](https://testnets.opensea.io/). Your NFT URL should be something like https://testnets.opensea.io/assets/rinkeby/<contract address>/<token ID>
+- Validate your NFT is public in [OpenSea](https://testnets.opensea.io/). Your NFT URL should be something like https://testnets.opensea.io/assets/rinkeby/YOUR_CONTRACT_ADDRESS/TOKEN_ID>.
 - Sell your NFT and make money!
 
 ## Testing a Decentralized oracle
 
-- Explore the [Chainlink data feeds documentation](https://docs.chain.link/docs/get-the-latest-price/)
+- Explore the [Chainlink data feeds documentation](https://docs.chain.link/docs/get-the-latest-price/).
 - Explore the [Ethereum data feeds](https://docs.chain.link/docs/ethereum-addresses/) addresses.
-- Publish a smart contract using the code from [2_PriceFinder.sol](https://github.com/gonzaloronvera/web_3_development_training_advanced_topics/blob/main/2_PriceFinder.sol)
-- Test the contract
+- Publish a smart contract using the code from [2_PriceFinder.sol](https://github.com/gonzaloronvera/web_3_development_training_advanced_topics/blob/main/2_PriceFinder.sol).
+- Test the contract.
 
 
 

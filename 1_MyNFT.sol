@@ -15,6 +15,9 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
         // Base URI
         string private baseURI = "https://ipfs.io/ipfs/QmSkD7RJXsABotJEfDk2ANGMGbgStuKmi2z2AfNX8BL6be?filename=1-gerardo.json";
 
+        // The token ID
+        uint256 private tokenID = 1;
+
         constructor()
             ERC721("Gonz", "GR")
         {}
@@ -24,6 +27,6 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
         }
 
         function mint() external {
-            _mint(msg.sender, 1);
+            _mint(msg.sender, tokenID);
         }
     }
