@@ -5,7 +5,7 @@ pragma solidity ^0.8.1;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 /*
-  Example of Opensea link: https://testnets.opensea.io/assets/rinkeby/0xf9918041febe797ea166299c946aebcc4d889937/1
+  Example of Opensea link: https://testnets.opensea.io/assets/goerli/0xc43B8B14C260Fb667cB8CBE830F9FFf38c66f38e/1
 */
 
     contract MyNFT is ERC721 {
@@ -19,7 +19,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
         uint256 private tokenID = 1;
 
         constructor()
-            ERC721("Gonz", "GR")
+            ERC721("Aaron", "AS")
         {}
         
         function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {

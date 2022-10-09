@@ -1,34 +1,32 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
 
-import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
+pragma solidity ^0.8.1;
 
-contract PriceFinder {
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-    AggregatorV3Interface internal priceFeed;
+/*
+  Example of Opensea link: https://testnets.opensea.io/assets/goerli/0xc43B8B14C260Fb667cB8CBE830F9FFf38c66f38e/1
+*/
 
-    /** 
-        Contract definition here: https://docs.chain.link/docs/get-the-latest-price/
-        Contracts addresses can be found here: https://docs.chain.link/docs/ethereum-addresses/
-    **/
+    contract MyNFT is ERC721 {
+        
+        using Strings for uint256;
+        
+        // Base URI
+        string private baseURI = "https://ipfs.io/ipfs/QmSkD7RJXsABotJEfDk2ANGMGbgStuKmi2z2AfNX8BL6be?filename=1-gerardo.json";
 
-    constructor() {
-        priceFeed = AggregatorV3Interface(0x8A753747A1Fa494EC906cE90E9f37563A8AF630e);
+        // The token ID
+        uint256 private tokenID = 1;
+
+        constructor()
+            ERC721("Aaron", "AS")
+        {}
+        
+        function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
+            return string(abi.encodePacked(baseURI, tokenId.toString()));
+        }
+
+        function mint() external {
+            _mint(msg.sender, tokenID);
+        }
     }
-
-    /**
-     * Returns the latest price
-     */
-    function getPrice() public view returns (int) {
-        (,int price,,,) = priceFeed.latestRoundData();
-
-        // Removing the 8 decimals from the answer
-        return price / 100000000;
-    }
-
-    function getConversionRate(int ethAmount) public view returns (int){
-        int price = getPrice();
-        int answer = (price * ethAmount);  
-        return answer;
-    }
-}
