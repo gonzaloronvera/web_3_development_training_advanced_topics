@@ -7,7 +7,7 @@
 ## Creating a NFT
 
 - Download [IPFS Desktop](https://docs.ipfs.tech/install/ipfs-desktop/#macos).
-- Prepare an image that you want to mint and upload it to APFS. Alternately, you could use this [Aaron(https://ipfs.io/ipfs/QmeCA7etPv4m68xQ3EKZpmkNdkyfRW79YZG3GsbipujLLG?filename=1-aaron.json).
+- Prepare an image that you want to mint and upload it to APFS. Alternately, you could use this [Aaron](https://ipfs.io/ipfs/QmeCA7etPv4m68xQ3EKZpmkNdkyfRW79YZG3GsbipujLLG?filename=1-aaron.json).
 - Prepare a JSON token for your NFT and upload it to APFS. You can use [this token](https://ipfs.io/ipfs/QmSkD7RJXsABotJEfDk2ANGMGbgStuKmi2z2AfNX8BL6be?filename=1-gerardo.json) as a reference.    
 - Modify the code from [MyNFT.sol](https://github.com/gonzaloronvera/web_3_development_training_advanced_topics/blob/main/1_MyNFT.sol) to use your token.
 - Publish source code using [Remix](https://remix.ethereum.org/) and validate your contract in [Goerli EtherScan](https://goerli.etherscan.io/).
